@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Página de Exemplo</title>
+    <script>
+        function redirectToWhatsApp() {
+            var whatsappLinks = [
+                "https://wa.me/+5562992749937",
+                "https://wa.me/+5562981524490",
+                "https://wa.me/+5562982535353"
+            ];
+            var randomNumber = Math.floor(Math.random() * whatsappLinks.length);
+            var randomLink = whatsappLinks[randomNumber];
+            window.location.href = randomLink;
+        }
+    </script>
+</head>
+<body onload="redirectToWhatsApp()">
+</body>
+</html>
